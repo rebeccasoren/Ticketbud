@@ -8,7 +8,7 @@ metadata:
     nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
 spec:
   rules:
-    - host: www.rebecca-ticketing.com
+    - host: www.ticket-ly.xyz
       http:
         paths:
           - path: /api/payments/?(.*)
@@ -37,7 +37,7 @@ kind: Service
 metadata:
   annotations:
     service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: 'true'
-    service.beta.kubernetes.io/do-loadbalancer-hostname: 'www.rebecca-ticketing.com'
+    service.beta.kubernetes.io/do-loadbalancer-hostname: 'www.ticket-ly.xyz'
     nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
   labels:
     helm.sh/chart: ingress-nginx-2.0.3
