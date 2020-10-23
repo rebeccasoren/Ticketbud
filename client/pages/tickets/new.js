@@ -31,7 +31,6 @@ const NewTicket = () => {
 	return (
 		<div>
 			<center><h3>Create A Ticket</h3></center>
-			<center>
 			<form onSubmit={onSubmit}>
 				<div className='form-group'>
 					<label>Title</label>
@@ -44,6 +43,10 @@ const NewTicket = () => {
 				<div className='form-group'>
 					<label>Price</label>
 					<input
+						style={{width: '100%',
+							padding: '12px 20px',
+							margin: '8px 0',
+							boxSizing: 'border-box'}}
 						value={price}
 						onBlur={onBlur}
 						onChange={(e) => setPrice(e.target.value)}
@@ -53,8 +56,6 @@ const NewTicket = () => {
 				{errors}
 				<button className='btn btn-primary'>Submit</button>
 			</form>
-			</center>
-			
 		</div>
 	);
 };
