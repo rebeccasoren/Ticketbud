@@ -43,7 +43,7 @@ const NewTicket = () => {
 				<div className='form-group'>
 					<label>Price</label>
 					<input
-						style={{width: '100%',
+						style={{width: '70%',
 							padding: '12px 20px',
 							margin: '8px 0',
 							boxSizing: 'border-box'}}
@@ -54,7 +54,7 @@ const NewTicket = () => {
 					/>
 				</div>
 				{errors}
-				<button className='btn btn-primary'>Submit</button>
+				<button style={{color:'green'}} className='btn btn-primary'>Submit</button>
 			</form>
 		</div>
 	);
