@@ -23,7 +23,7 @@ export default () => {
 
     return (
         <form onSubmit={onSubmit}>
-            <h1>Sign Up</h1>
+            <center><h3>Sign Up</h3></center>
             <div className="form-group">
                 <label>Email Address</label>
                 <input
