@@ -22,7 +22,7 @@ export default () => {
     };
 
     return (
-        <center>
+        <div style={{color:'black',opacity:'0.8', backgroundColor:'whitesmoke'}}><center>
         <form onSubmit={onSubmit}>
             <h1>Sign Up</h1>
             <div className="form-group">
@@ -50,5 +50,7 @@ export default () => {
             {errors}
             <button className="btn btn-success">Sign Up</button>
         </form></center>
+        </div>
+        
     );
 };
