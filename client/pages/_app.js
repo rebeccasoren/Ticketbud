@@ -4,7 +4,10 @@ import Header from '../components/header';
 
 const AppComponent = ({ Component, pageProps, currentUser }) => {
 	return (
-		<div>
+		<div style={{
+			backgroundImage:'url(https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?cs=srgb&dl=pexels-vishnu-r-nair-1105666.jpg&fm=jpg)',
+			backgroundSize:'cover'
+			}}>
 			<Header currentUser={currentUser} />
 			<div className="container" >
 			<Component currentUser={currentUser} {...pageProps} />
