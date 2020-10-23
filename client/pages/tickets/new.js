@@ -36,7 +36,6 @@ const NewTicket = () => {
 				<div className='form-group'>
 					<label>Title</label>
 					<input
-						style='box-sizing: border-box;'
 						value={title}
 						onChange={(e) => setTitle(e.target.value)}
 						className='form-control'
