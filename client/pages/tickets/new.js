@@ -30,7 +30,7 @@ const NewTicket = () => {
 
 	return (
 		<div>
-			<center><h3>Create A Ticket</h3></center>
+			<center><h2 style={{fontFamily:'Trebuchet MS'}}>Create A Ticket</h2></center>
 			<center>
 			<form onSubmit={onSubmit}>
 				<div className='form-group'>
@@ -38,7 +38,6 @@ const NewTicket = () => {
 					<input
 						style={{width: '70%',
 						padding: '12px 20px',
-						margin: '8px 0',
 						boxSizing: 'border-box'}}
 						value={title}
 						onChange={(e) => setTitle(e.target.value)}
@@ -50,7 +49,6 @@ const NewTicket = () => {
 					<input
 						style={{width: '70%',
 							padding: '12px 20px',
-							margin: '8px 0',
 							boxSizing: 'border-box'}}
 						value={price}
 						onBlur={onBlur}
@@ -59,7 +57,7 @@ const NewTicket = () => {
 					/>
 				</div>
 				{errors}
-				<button style={{backgroundColor:'green'}} className='btn btn-primary'>Submit</button>
+				<button className='btn btn-success'>Submit</button>
 			</form>
 			</center>
 		</div>
