@@ -31,14 +31,15 @@ const NewTicket = () => {
 	return (
 		<div>
 			<center><h3>Create A Ticket</h3></center>
+			<center>
 			<form onSubmit={onSubmit}>
 				<div className='form-group'>
 					<label>Title</label>
 					<input
-					style={{width: '70%',
-					padding: '12px 20px',
-					margin: '8px 0',
-					boxSizing: 'border-box'}}
+						style={{width: '70%',
+						padding: '12px 20px',
+						margin: '8px 0',
+						boxSizing: 'border-box'}}
 						value={title}
 						onChange={(e) => setTitle(e.target.value)}
 						className='form-control'
@@ -58,8 +59,9 @@ const NewTicket = () => {
 					/>
 				</div>
 				{errors}
-				<Button variant="outline-success">Submit</Button>
+				<button style={{backgroundColor:'green'}} className='btn btn-primary'>Submit</button>
 			</form>
+			</center>
 		</div>
 	);
 };
