@@ -22,7 +22,7 @@ export default () => {
     };
 
     return (
-    <div style={{color:'black',opacity:'0.7', backgroundColor:'white', padding:'3%', marginTop:'5%'}}><center>
+    <div style={{color:'white',opacity:'0.85', backgroundColor:'grey', padding:'3%', marginTop:'5%', marginBottom:'5%'}}><center>
         <form onSubmit={onSubmit}>
             <h1>Sign In</h1>
             <div className="form-group">
