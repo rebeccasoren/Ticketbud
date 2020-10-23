@@ -35,6 +35,10 @@ const NewTicket = () => {
 				<div className='form-group'>
 					<label>Title</label>
 					<input
+					style={{width: '70%',
+					padding: '12px 20px',
+					margin: '8px 0',
+					boxSizing: 'border-box'}}
 						value={title}
 						onChange={(e) => setTitle(e.target.value)}
 						className='form-control'
