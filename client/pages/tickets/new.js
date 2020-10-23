@@ -54,7 +54,7 @@ const NewTicket = () => {
 					/>
 				</div>
 				{errors}
-				<button style={{color:'green'}} className='btn btn-primary'>Submit</button>
+				<Button variant="outline-success">Submit</Button>
 			</form>
 		</div>
 	);
