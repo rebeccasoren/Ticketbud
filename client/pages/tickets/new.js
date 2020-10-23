@@ -30,11 +30,11 @@ const NewTicket = () => {
 
 	return (
 		<div>
-			<center><h1 style={{fontFamily:'Nunito'}}>Create A Ticket</h1></center>
+			<center><h1>Create A Ticket</h1></center>
 			<center>
 			<form onSubmit={onSubmit}>
 				<div className='form-group'>
-					<h3 style={{fontFamily:'Nunito'}}>Concert Title</h3>
+					<label>Concert Title</label>
 					<input
 						style={{width: '70%',
 						padding: '12px 20px',
@@ -45,7 +45,7 @@ const NewTicket = () => {
 					/>
 				</div>
 				<div className='form-group'>
-					<h3 style={{fontFamily:'Nunito'}}>Concert Price</h3>
+					<label>Concert Price</label>
 					<input
 						style={{width: '70%',
 							padding: '12px 20px',

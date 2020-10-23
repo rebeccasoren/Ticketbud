@@ -22,11 +22,14 @@ export default () => {
     };
 
     return (
+        <center>
         <form onSubmit={onSubmit}>
-            <center><h3>Sign In</h3></center>
+            <h1>Sign In</h1>
             <div className="form-group">
                 <label>Email Address</label>
-                <input
+                <input style={{width: '70%',
+						padding: '12px 20px',
+						boxSizing: 'border-box'}}
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                     className="form-control"
@@ -35,6 +38,9 @@ export default () => {
             <div className="form-group">
                 <label>Password</label>
                 <input
+                    style={{width: '70%',
+                    padding: '12px 20px',
+                    boxSizing: 'border-box'}}
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                     type="password"
@@ -42,7 +48,7 @@ export default () => {
                 />
             </div>
             {errors}
-            <button className="btn btn-primary">Sign In</button>
-        </form>
+            <button className="btn btn-success">Sign In</button>
+        </form></center>
     );
 };
