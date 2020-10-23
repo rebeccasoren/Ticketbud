@@ -3,8 +3,8 @@ import buildClient from '../api/build-client';
 import Header from '../components/header';
 
 const AppComponent = ({ Component, pageProps, currentUser }) => {
-	document.body.style.backgroundImage='url(https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?cs=srgb&dl=pexels-vishnu-r-nair-1105666.jpg&fm=jpg)';
-	document.body.style.backgroundSize='cover';
+	Component.body.style.backgroundImage='url(https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?cs=srgb&dl=pexels-vishnu-r-nair-1105666.jpg&fm=jpg)';
+	Component.body.style.backgroundSize='cover';
 	
 	return (
 		<div>
