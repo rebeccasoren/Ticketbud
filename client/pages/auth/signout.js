@@ -14,5 +14,5 @@ export default () => {
         doRequest();
     }, []);
 
-    return <div>Signing you out...</div>;
+    return <div class="main">Signing you out...</div>;
 };

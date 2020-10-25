@@ -29,7 +29,21 @@ const NewTicket = () => {
 	};
 
 	return (
-		<div>
+		<div class="main">
+            <p class="sign" align="center">Upcoming Event</p>
+            <form class="form1" onSubmit={onSubmit}>
+				<input class="un" type="text" align="center" placeholder="Event Name" 
+						value={title}
+						onChange={(e) => setTitle(e.target.value)} />
+				<input class="un" type="text" align="center" placeholder="Ticket Price" 
+						value={price}
+						onBlur={onBlur}
+						onChange={(e) => setPrice(e.target.value)} />
+                <button class="submit" align="center">Sell Ticket</button>
+                <p class="forgot" align="center"><a href="#">Admits One</a></p>
+                </form>
+            </div>
+		/*<div>
 			<center><h1>Create A Ticket</h1></center>
 			<center>
 			<form onSubmit={onSubmit}>
@@ -60,7 +74,7 @@ const NewTicket = () => {
 				<button className='btn btn-success'>Submit</button>
 			</form>
 			</center>
-		</div>
+		</div>*/
 	);
 };
 export default NewTicket;
