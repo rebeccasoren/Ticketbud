@@ -23,7 +23,7 @@ export default () => {
 
     return (
         <div class="main">
-            <p class="sign" align="center">Sign in</p>
+            <p class="sign" align="center">Sign In</p>
             <form class="form1" onSubmit={onSubmit}>
                 <input class="un" type="text" align="center" placeholder="Email Address" value={email}
                     onChange={e => setEmail(e.target.value)} />
