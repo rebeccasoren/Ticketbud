@@ -13,7 +13,7 @@ const TicketShow = ({ ticket }) => {
 	});
 
 	return (
-		<div class="card text-center">
+		<div class="card text-center" style={{width:'50%', color:'#6A706E', marginBottom:'2%'}}>
 			<div class="card-header">
 				{ticket.title}
 			</div>

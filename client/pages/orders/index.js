@@ -4,7 +4,7 @@ const OrderIndex = ({ orders }) => {
 		<center><h1>My Orders</h1></center>
 		{orders.map((order) => {
 		  return (
-			<div class="card text-center" key={order.id} style={{width:'50%'}}>
+			<div class="card text-center" key={order.id} style={{width:'50%', color:'#6A706E', marginBottom:'2%'}}>
 			<div class="card-body">
 				<h5 class="card-title">{order.ticket.title}</h5>
 		  			<p class="card-text">Price: Rs.{order.ticket.price}</p>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 const LandingPage = ({ currentUser, tickets }) => {
 	const ticketList = tickets.map((ticket) => {
 		return (
-			<div class="card text-center" key={ticket.id} style={{width:'50%', marginBottom:'2%'}}>
+			<div class="card text-center" key={ticket.id} style={{width:'50%', marginBottom:'2%', color:'#6A706E'}}>
 				<div class="card-header">
 					{ticket.title}
 				</div>
