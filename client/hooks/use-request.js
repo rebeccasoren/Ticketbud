@@ -15,10 +15,10 @@ export default ({ url, method, body, onSuccess }) => {
 
 			return response.data;
 		} catch (err) {
-			console.log(err.response.data.errors[0].message);
 			setErrors(
 				<div class="alert alert-danger" role="alert" style={{width:'30%'}}>
-				 			{err.message}
+					<h4>Oops!</h4>
+				 	{err.response.data.errors[0].message}
 				</div>
 				// <div className='alert alert-danger'>
 				// 	<h4>Ooops....</h4>
