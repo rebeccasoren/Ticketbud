@@ -6,14 +6,15 @@ const OrderIndex = ({ orders }) => {
 		  return (
 			<center>
 				<div class="card text-center" key={order.id} style={{width:'50%', color:'#6A706E', marginBottom:'2%'}}>
-			<div class="card-body">
-				<h5 class="card-title">{order.ticket.title}</h5>
-		  			<p class="card-text">Price: Rs.{order.ticket.price}</p>
-			</div>
-			<div class="card-footer text-muted">{order.status}</div>
-			</div>
+				<div class="card-body">
+					<h5 class="card-title">{order.ticket.title}</h5>
+						<p class="card-text">Price: Rs.{order.ticket.price}</p>
+				</div>
+				<div class="card-footer text-muted">
+					{order.status}
+				</div>
+				</div>
 			</center>
-			
 		  );
 		})}
 	  </div>
