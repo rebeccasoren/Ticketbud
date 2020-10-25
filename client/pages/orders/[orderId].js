@@ -29,13 +29,15 @@ const OrderShow = ({ order, currentUser }) => {
 	}, [order]);
 
 	if (timeLeft < 0) {
-		return <div>Order Expired</div>;
+		return <div><center>Order Expired</center></div>;
 	}
 
 	return (
-		<div>
-			Time left to pay: {timeLeft} seconds
-			<br></br>
+		<center>
+		<div class="card">
+		<h5 class="card-header">Time left to pay: {timeLeft} seconds</h5>
+		<div class="card-body">
+			<button class='btn btn-primary'>
 			<StripeCheckout
 				token={({ id }) => doRequest({ token: id })}
 				stripeKey='pk_test_vjqqmSWaSH0M1UtOFXQr2eR200RtDhfKlp'
@@ -43,8 +45,9 @@ const OrderShow = ({ order, currentUser }) => {
 				email={currentUser.email}
 				currency='inr'
 			/>
-			{errors}
+			</button>
 		</div>
+		</div></center>
 	);
 };
 
