@@ -10,7 +10,7 @@ const LandingPage = ({ currentUser, tickets }) => {
 				<div class="card-body">
 				<p class="card-text">Buy Now @ Rs.{ticket.price}</p>
 				<Link href='/tickets/[ticketId]' as={`/tickets/${ticket.id}`}>
-						<a class='btn btn-primary'>View</a>
+						<a class='btn btn-primary'>View Event</a>
 					</Link>
 				</div>
 			</div>

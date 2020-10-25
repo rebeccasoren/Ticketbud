@@ -13,7 +13,9 @@ const TicketShow = ({ ticket }) => {
 	});
 
 	return (
-		<div class="card text-center" style={{width:'50%', color:'#6A706E', marginBottom:'2%'}}>
+		<center>
+			<h1>Purchase Ticket</h1>
+		<div class="card text-center" style={{width:'50%', color:'#6A706E', marginBottom:'2%', marginTop:'2%'}}>
 			<div class="card-header">
 				{ticket.title}
 			</div>
@@ -24,14 +26,7 @@ const TicketShow = ({ ticket }) => {
 			<div class="card-footer text-muted">
 			</div>
 			</div>
-		// <div>
-		// 	<h1>{ticket.title}</h1>
-		// 	<h4>Price: {ticket.price} </h4>
-		// 	{errors}
-		// 	<button onClick={() => doRequest()} className='btn btn-primary'>
-		// 		Purchase
-		// 	</button>
-		// </div>
+		</center>
 	);
 };
 
