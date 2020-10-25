@@ -15,7 +15,7 @@ export default ({ url, method, body, onSuccess }) => {
 
 			return response.data;
 		} catch (err) {
-			console.log(err);
+			console.log(err.response.data);
 			setErrors(
 				<div class="alert alert-danger" role="alert" style={{width:'30%'}}>
 				 			{err.message}
