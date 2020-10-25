@@ -25,7 +25,7 @@ export default ({ currentUser }) => {
 				<a className='navbar-brand'>Ticketly</a>
 			</Link>
 
-			<div className='d-flex justify-content-end'>
+			<div className='d-flex justify-content-end' style={{color:'#6A706E'}}>
 				<ul className='nav d-flex align-items-center'>{links}</ul>
 			</div>
 		</nav>
