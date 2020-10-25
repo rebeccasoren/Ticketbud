@@ -3,16 +3,15 @@ import Link from 'next/link';
 const LandingPage = ({ currentUser, tickets }) => {
 	const ticketList = tickets.map((ticket) => {
 		return (
-			<div class="card text-center" key={ticket.id}>
+			<div class="card text-center" key={ticket.id} style={{width:'50%'}}>
+				<div class="card-header">
+					{ticket.title}
+				</div>
 				<div class="card-body">
-				<h5 class="card-title">{ticket.title}</h5>
 				<p class="card-text">Buy Now: Rs.{ticket.price}</p>
 					<a href="/tickets/[ticketId]" class="btn btn-primary">View Event</a>
 				</div>
-				<div class="card-footer text-muted">
-					Available
-				</div>
-				</div>
+			</div>
 			/*<tr key={ticket.id}>
 				<td>{ticket.title}</td>
 				<td>{ticket.price}</td>
