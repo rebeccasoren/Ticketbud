@@ -24,11 +24,7 @@ Ensure the cluster is running by doing ```minikube status```.
 ### Ingress
 Ensure *ingress* is enabled in minikube cluster.
 
-```
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/cloud/deploy.yaml
-```
-
-Then run ```minikube addons enable ingress```
+Run ```minikube addons enable ingress```
 
 ### Secret Keys
 ```kubectl create secret generic jwt-secret --from-literal JWT_KEY= <your key here> ```
