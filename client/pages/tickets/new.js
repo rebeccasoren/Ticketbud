@@ -42,6 +42,7 @@ const NewTicket = () => {
                 <button class="submit" align="center">Sell Ticket</button>
                 <p class="forgot" align="center"><a href="#">Admits One</a></p>
                 </form>
+				{errors}
             </div>
 	);
 };

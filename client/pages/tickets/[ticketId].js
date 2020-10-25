@@ -26,6 +26,7 @@ const TicketShow = ({ ticket }) => {
 			<div class="card-footer text-muted">
 			</div>
 			</div>
+			{errors}
 		</center>
 	);
 };
