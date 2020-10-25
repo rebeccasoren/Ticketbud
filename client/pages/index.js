@@ -14,15 +14,6 @@ const LandingPage = ({ currentUser, tickets }) => {
 					</Link>
 				</div>
 			</div>
-			/*<tr key={ticket.id}>
-				<td>{ticket.title}</td>
-				<td>{ticket.price}</td>
-				<td>
-					<Link href='/tickets/[ticketId]' as={`/tickets/${ticket.id}`}>
-						<a>View</a>
-					</Link>
-				</td>
-			</tr>*/
 		);
 	});
 
