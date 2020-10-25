@@ -22,7 +22,8 @@ export default () => {
     };
 
     return (
-        <div class="main">
+        <center>
+            <div class="main">
             <p class="sign" align="center">Sign In</p>
             <form class="form1" onSubmit={onSubmit}>
                 <input class="un" type="text" align="center" placeholder="Email Address" value={email}
@@ -33,7 +34,9 @@ export default () => {
                 <button class="submit" align="center">Sign in</button>
                 <p class="forgot" align="center"><a href="#">Forgot Password?</a></p>
                 </form>
-                {errors}
             </div>
+            {errors}
+        </center>
+        
     );
 };

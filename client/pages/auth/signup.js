@@ -22,18 +22,19 @@ export default () => {
     };
 
     return (
-        <div class="main">
-        <p class="sign" align="center">Sign Up</p>
-        <form class="form1" onSubmit={onSubmit}>
-            <input class="un" type="text" align="center" placeholder="Email Address" value={email}
-                onChange={e => setEmail(e.target.value)} />
-            <input class="pass" type="password" align="center" placeholder="Password" value={password}
-                onChange={e => setPassword(e.target.value)}
-                type="password" />
-            <button class="submit" align="center">Sign up</button>
-            </form>
-            {errors}
-        </div>
-        
+        <center>        
+            <div class="main">
+            <p class="sign" align="center">Sign Up</p>
+            <form class="form1" onSubmit={onSubmit}>
+                <input class="un" type="text" align="center" placeholder="Email Address" value={email}
+                    onChange={e => setEmail(e.target.value)} />
+                <input class="pass" type="password" align="center" placeholder="Password" value={password}
+                    onChange={e => setPassword(e.target.value)}
+                    type="password" />
+                <button class="submit" align="center">Sign up</button>
+                </form>
+            </div>
+        {errors}
+        </center>
     );
 };
