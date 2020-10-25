@@ -33,6 +33,7 @@ export default () => {
                 <button class="submit" align="center">Sign in</button>
                 <p class="forgot" align="center"><a href="#">Forgot Password?</a></p>
                 </form>
+                {errors}
             </div>
     );
 };
