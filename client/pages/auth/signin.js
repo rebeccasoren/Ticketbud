@@ -30,7 +30,7 @@ export default () => {
                 <input class="pass" type="password" align="center" placeholder="Password" value={password}
                     onChange={e => setPassword(e.target.value)}
                     type="password" />
-                <a class="submit" align="center">Sign in</a>
+                <button class="submit" align="center">Sign in</button>
                 <p class="forgot" align="center"><a href="#">Forgot Password?</a></p>
                 </form>
             </div>
