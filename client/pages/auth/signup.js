@@ -22,7 +22,7 @@ export default () => {
     };
 
     return (
-        <center>        
+        <div>        
             <div class="main">
             <p class="sign" align="center">Sign Up</p>
             <form class="form1" onSubmit={onSubmit}>
@@ -34,7 +34,7 @@ export default () => {
                 <button class="submit" align="center">Sign up</button>
                 </form>
             </div>
-        {errors}
-        </center>
+        alert({errors})
+        </div>
     );
 };
