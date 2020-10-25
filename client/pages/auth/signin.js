@@ -22,33 +22,17 @@ export default () => {
     };
 
     return (
-    <div style={{color:'white',opacity:'0.85', backgroundColor:'grey', padding:'3%', marginTop:'5%', marginBottom:'5%'}}><center>
-        <form onSubmit={onSubmit}>
-            <h1>Sign In</h1>
-            <div className="form-group">
-                <label>Email Address</label>
-                <input style={{width: '70%',
-						padding: '12px 20px',
-						boxSizing: 'border-box'}}
-                    value={email}
-                    onChange={e => setEmail(e.target.value)}
-                    className="form-control"
-                />
-            </div>
-            <div className="form-group">
-                <label>Password</label>
-                <input
-                    style={{width: '70%',
-                    padding: '12px 20px',
-                    boxSizing: 'border-box'}}
-                    value={password}
+        <div class="main">
+            <p class="sign" align="center">Sign in</p>
+            <form class="form1" onSubmit={onSubmit}>
+                <input class="un" type="text" align="center" placeholder="Email Address" value={email}
+                    onChange={e => setEmail(e.target.value)} />
+                <input class="pass" type="password" align="center" placeholder="Password" value={password}
                     onChange={e => setPassword(e.target.value)}
-                    type="password"
-                    className="form-control"
-                />
+                    type="password" />
+                <a class="submit" align="center">Sign in</a>
+                <p class="forgot" align="center"><a href="#">Forgot Password?</a></p>
+                </form>
             </div>
-            {errors}
-            <button className="btn btn-success">Sign In</button>
-        </form></center></div>
     );
 };
