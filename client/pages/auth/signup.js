@@ -32,6 +32,7 @@ export default () => {
                 type="password" />
             <button class="submit" align="center">Sign up</button>
             </form>
+            {errors}
         </div>
         
     );
