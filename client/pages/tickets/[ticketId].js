@@ -13,14 +13,25 @@ const TicketShow = ({ ticket }) => {
 	});
 
 	return (
-		<div>
-			<h1>{ticket.title}</h1>
-			<h4>Price: {ticket.price} </h4>
-			{errors}
-			<button onClick={() => doRequest()} className='btn btn-primary'>
-				Purchase
-			</button>
-		</div>
+		<div class="card text-center">
+			<div class="card-header">
+				{ticket.title}
+			</div>
+			<div class="card-body">
+			<p class="card-text">Buy Now @ Rs. {ticket.price}</p>
+				<button onClick={() => doRequest()} class="btn btn-primary">Purchase</button>
+			</div>
+			<div class="card-footer text-muted">
+			</div>
+			</div>
+		// <div>
+		// 	<h1>{ticket.title}</h1>
+		// 	<h4>Price: {ticket.price} </h4>
+		// 	{errors}
+		// 	<button onClick={() => doRequest()} className='btn btn-primary'>
+		// 		Purchase
+		// 	</button>
+		// </div>
 	);
 };
 
