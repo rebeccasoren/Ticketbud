@@ -22,7 +22,7 @@ export default () => {
     };
 
     return (
-        <div>        
+           
             <div class="main">
             <p class="sign" align="center">Sign Up</p>
             <form class="form1" onSubmit={onSubmit}>
@@ -32,9 +32,8 @@ export default () => {
                     onChange={e => setPassword(e.target.value)}
                     type="password" />
                 <button class="submit" align="center">Sign up</button>
+                {errors}
                 </form>
             </div>
-        alert({errors})
-        </div>
     );
 };
