@@ -1,6 +1,7 @@
 const OrderIndex = ({ orders }) => {
 	return (
 	  <div>
+		<center><h1>My Orders</h1></center>
 		{orders.map((order) => {
 		  return (
 			<div class="card text-center" key={order.id}>

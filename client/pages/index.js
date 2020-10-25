@@ -8,7 +8,7 @@ const LandingPage = ({ currentUser, tickets }) => {
 					{ticket.title}
 				</div>
 				<div class="card-body">
-				<p class="card-text">Buy Now: Rs.{ticket.price}</p>
+				<p class="card-text">Buy Now @ Rs.{ticket.price}</p>
 					<a href="/tickets/[ticketId]" class="btn btn-primary">View Event</a>
 				</div>
 			</div>
@@ -26,18 +26,10 @@ const LandingPage = ({ currentUser, tickets }) => {
 
 	return (
 		<div>
-			<center><h1>Book Your Tickets</h1></center>
-			{/* <table className='table'>
-				<thead>
-					<tr>
-						<th>Title</th>
-						<th>Price</th>
-						<th>Link</th>
-					</tr>
-				</thead> 
-				<tbody>{ticketList}</tbody>
-			</table> */}
+			<center><h1>Don't Miss Out</h1></center>
+			<center>
 			{ticketList}
+			</center>
 		</div>
 	);
 };
