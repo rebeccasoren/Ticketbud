@@ -1,9 +1,16 @@
-# Ticketing Microservice
+# Ticketing Application using Microservices
+Deployed Application: [www.ticket-ly.xyz](http://www.ticket-ly.xyz/)
+
+A concert ticket booking application using Docker containers for every feature of the application.
+
 Each service is created using Node and Express. Data for each service is held in either a Mongo database or Redis. The entire app is deployed and runs in Docker containers executed in a Kubernetes cluster.
 
+## Production Details
+Kubernetes cluster hosted using [Digital Ocean](https://www.digitalocean.com/)
+
+## Development Mode
 Run ```skaffold dev``` to deploy the project on your system.
 
-## Notes for Deployment
 ### Docker
 Ensure [docker](https://docs.docker.com/get-docker/) is up and running in your system
 
@@ -17,11 +24,7 @@ Ensure the cluster is running by doing ```minikube status```.
 ### Ingress
 Ensure *ingress* is enabled in minikube cluster.
 
-```
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/cloud/deploy.yaml
-```
-
-Then run ```minikube addons enable ingress```
+Run ```minikube addons enable ingress```
 
 ### Secret Keys
 ```kubectl create secret generic jwt-secret --from-literal JWT_KEY= <your key here> ```
