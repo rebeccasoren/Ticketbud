@@ -1,5 +1,5 @@
 # Ticketing Application using Microservices
-Deployed Application: [www.ticket-ly.xyz](http://www.ticket-ly.xyz/)
+~~Deployed Application: [www.ticket-ly.xyz](http://www.ticket-ly.xyz/)~
 
 A concert ticket booking application using Docker containers for every feature of the application.
 
