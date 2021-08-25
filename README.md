@@ -1,4 +1,6 @@
 # Ticketing Application using Microservices
+[![DigitalOcean Referral Badge](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg)](https://www.digitalocean.com/?refcode=a429df76905b&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
+
 <strike>Deployed Application: [www.ticket-ly.xyz](http://www.ticket-ly.xyz/)</strike>
 
 A concert ticket booking application using Docker containers for every feature of the application.
